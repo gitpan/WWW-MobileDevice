@@ -8,13 +8,11 @@ require Exporter;
 
 our @ISA = qw(Exporter);
 
-our %EXPORT_TAGS = ( 'all' => [ qw(
-	mobile_device	
-) ] );
+our %EXPORT_TAGS = ( 'all' => [ qw() ] );
 
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
-our @EXPORT = qw();
+our @EXPORT = qw(mobile_device);
 
 our $VERSION = '0.01';
 
@@ -33,7 +31,7 @@ WWW::MobileDevice - Perl extension for mobile device detection
 
 =head1 SYNOPSIS
 
-  use WWW::MobileDevice;
+  use WWW::MobileDevice qw(mobile_device);
 
   if (mobile_device()) {
       # display page for mobile device

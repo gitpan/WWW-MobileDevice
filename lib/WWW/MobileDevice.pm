@@ -31,7 +31,7 @@ WWW::MobileDevice - Perl extension for mobile device detection
 
 =head1 SYNOPSIS
 
-  use WWW::MobileDevice qw(mobile_device);
+  use WWW::MobileDevice;
 
   if (mobile_device()) {
       # display page for mobile device
@@ -53,7 +53,7 @@ mobile_device()
 
 =head1 AUTHOR
 
-Kiel R Stirling, <lt>kielstr@cpan.org<gt>
+Kiel R Stirling, kielstr@cpan.org
 
 =head1 COPYRIGHT AND LICENSE
 
